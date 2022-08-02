@@ -4,16 +4,150 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/e2cfe7cea6.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="/Users/Iago/Desktop/lamp-is-noob/lamp.css">
 	<title>Lamp is noob</title>
 	<link href="https://fonts.googleapis.com/css2?family=Kalam&family=Source+Code+Pro&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="/Users/Iago/Desktop/lamp-is-noob/lamp.css">
+	<style type="text/css">
+        .card-img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-top: 15px;
+	border: 2px solid white;
+	padding: 10px;
+	box-shadow: 0px 0px 50px rgba(0, 0, 0, .8);
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+div.container {
+	height: 100vh;
+	width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url("https://lh3.googleusercontent.com/bT6y1d7SrUz-FmFr_KrEqX6LomCYjeV1thbYOzB0SEnhsEntR2mtsBCwmXp-ENx7Yo1W2GogjsF1DDGo8XTz4h8ItwYUebk4aAkZrYuU-AhpYOedSByVFOgoUoU4bDft3ko3LMgxqKSNJB26cOZGvSyicLpclIJQvX6yGa8ojsSGqrPYW0zVVRPj2G5TdW9hAMA-GYmyX1xr_PWrNi-wQmuWoCsWSQ23G4BXaL6GNhbcS7c6TVmsIWvsy0qD2cZ9kNc0PWqZIg7-aPGGW4FvwYPj4xuVML6547fjz5ENPlcmfZ6I2mWzxhY_AjXBkksqT9rPNCF7PZlC8m__AiLheuFZzZXKABLCeJnP1ocoF6XT64DpZXsFWzdjOPEiGwpayPDxD6FBTkvwmExM2Ff4wF_FQ-LJt1VzB-iDiQytyS0ZJuCIlEfXBcasBx35KzOv_6EByTldsTrkxhbN30szBQ5rtmMoXU36xmoawV0_RcEE3HbkQZuxuuET_FNWpWhzpU-PPoLrNc-cHWsNAsUn9TCGc__sc_GWBgdzJeac9bVbHWFXSzOW3T4C3eNBYx2RkMQp7KhLVRLETyF9sO_1hLHVCXONRweVVI7pTlA-bLKjeOfpRvLQcaxae48pISeoP4bvA9y-BfBX2N9BS-fuaCH6YVlDS0Bf4YDz_RekymvXYBZnTxDzNa1ouF0F7XALjCP4D8h6WxAMXHLqkWVk6Ce-yI5FsCBc3VsLi-xjL6mcm-UCPyO-bi7MaU-e=w1044-h659-no?authuser=0") no-repeat center;
+}
+.card-warapper {
+	height: 540px;
+	width: 450px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    background: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url("https://lh3.googleusercontent.com/bT6y1d7SrUz-FmFr_KrEqX6LomCYjeV1thbYOzB0SEnhsEntR2mtsBCwmXp-ENx7Yo1W2GogjsF1DDGo8XTz4h8ItwYUebk4aAkZrYuU-AhpYOedSByVFOgoUoU4bDft3ko3LMgxqKSNJB26cOZGvSyicLpclIJQvX6yGa8ojsSGqrPYW0zVVRPj2G5TdW9hAMA-GYmyX1xr_PWrNi-wQmuWoCsWSQ23G4BXaL6GNhbcS7c6TVmsIWvsy0qD2cZ9kNc0PWqZIg7-aPGGW4FvwYPj4xuVML6547fjz5ENPlcmfZ6I2mWzxhY_AjXBkksqT9rPNCF7PZlC8m__AiLheuFZzZXKABLCeJnP1ocoF6XT64DpZXsFWzdjOPEiGwpayPDxD6FBTkvwmExM2Ff4wF_FQ-LJt1VzB-iDiQytyS0ZJuCIlEfXBcasBx35KzOv_6EByTldsTrkxhbN30szBQ5rtmMoXU36xmoawV0_RcEE3HbkQZuxuuET_FNWpWhzpU-PPoLrNc-cHWsNAsUn9TCGc__sc_GWBgdzJeac9bVbHWFXSzOW3T4C3eNBYx2RkMQp7KhLVRLETyF9sO_1hLHVCXONRweVVI7pTlA-bLKjeOfpRvLQcaxae48pISeoP4bvA9y-BfBX2N9BS-fuaCH6YVlDS0Bf4YDz_RekymvXYBZnTxDzNa1ouF0F7XALjCP4D8h6WxAMXHLqkWVk6Ce-yI5FsCBc3VsLi-xjL6mcm-UCPyO-bi7MaU-e=w1044-h659-no?authuser=0") no-repeat center;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: box-shadow 1s;
+}
+
+.card-warapper:hover {
+	box-shadow: 0 0 30px white;
+}
+.card-warapper:hover .card {
+	top: 0;
+}
+
+.card {
+	position: absolute;
+	top: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(190deg, rgba(21, 199, 30, 0.8)50%, rgba(233, 67, 67, 0.8)0);
+	border-radius: inherit;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	transition: top .3s 1.5s;
+}
+.card-heading {
+	font-family: 'Kalam', cursive;
+	font-size:25px ;
+	font-weight:300 ;
+	text-transform:uppercase ;
+	color: white;
+	letter-spacing: 3px;
+	background: linear-gradient(#0a9751, #06831b);
+	width: 70%;
+	text-align: center;
+	padding: 5px 0;
+	transform: perspective(1000px) skewX(-20deg) rotateY(40deg);
+}
+.card-paragraph {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 18px;
+	color: white;
+	width: 85%;
+	text-align: justify;
+	position: relative;
+}
+.card-paragraph::first-letter {
+	margin-left: 35px;
+}
+.card-paragraph i {
+	color: white;
+	font-size: 25px;
+	font-style: italic;
+	position: absolute;
+}
+.card-paragraph i:first-child {
+	top: -5%;
+}
+.card-paragraph i:last-child {
+	bottom: -5%;
+	margin-left: 10px
+}
+.card-icons {
+	list-style: none;
+	display: flex;
+	width: 50%;
+	justify-content: space-around;
+}
+.card-icon-link {
+	text-decoration: none;
+	width: 35px;
+	height: 35px;
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	transition: border .3s;
+}
+.card-icon {
+	font-size: 20px;
+	color: white;
+	transition: color .3s;
+}
+.card-icon-link:hover {
+	border: 1px solid blue;
+}
+.card-icon-link:hover .card-icon {
+	color: blue;
+}
+.card-btn {
+border: none;
+outline: none;
+width: 150px;
+height: 35px;
+margin-bottom: 20px;
+border-radius: 50px;
+background: linear-gradient(#6837ee, darkblue);
+color: white;
+text-transform: uppercase;
+font-size: 12px;
+box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+cursor: pointer;
+}
+</style>
+	
 </head>
 <body>
 
 	<div class="container">
 		<div class="card-warapper">
              <div class="card">
-             	<img src="/Users/Iago/Pictures/img/lamp profile.jpg" class="card-img">
+             	<img src="https://lh3.googleusercontent.com/CWbSLyJ8-ewycM4bmTJi9afxfpkXCo7wKMFWARpxsoRkOrsasSdHhN6ES9qzhGjtwX6bL5G_41ACtpq5S0dHhihvlG04VvSMvCnrOx1JZ-YftnFURsZ4opQeqzdK6Ze1om31jWVSpVlQn94VO5cqMT6t2b2G2IwKwfThSS1O0TqQZY2Ud4rA5phsRZ5rabbf7kyUi_M95ybqTxw7JOgzQkuHWrjeucS9khDVPoUIRjAE8fbf6wVkH4DJ4m62J8ftrC0X-0iPBUzZ_kunkUKm-_4g0egOK1k5kGhm1_y7sPBXpdUKmFFfkhJ9wimfoWTE49cxzRAIVV2BJO_wpKyYJklj_MZVQwL25qADQqkq5kd_kW1RXFyGhECYzWeUUavSNKjsWhZ-ft_Ilrgzx0v9-D-nhXRjXqJnWyrRNDvrUyKrFdc7X0Nn6gXyxiqMyxUJMOmD4ivb3rUFBKj0vIpwOg-bgQ1xsev5szmpFVmATAmX7nqDGVbC4zKCNlgbvTNS9Wjfkrbh_ezIVgbaEaf7ltLghSpBXuSWGHQu_r7Er2wPgOMZS1O-4D30_LtrjNyqYJNjqthcePCpMkqDcYqustRxQrJcmArp40mrGYEW-3L4oCIrilMCFJcZ0suV_52n6GcQDG9VtskCKF-5G51R_pl2uTze9T7IFN6GzHI0O4ho4yJHN4ZA0EIuvQRg--cIszpg2x5si6FbW41uJYG1TSIb--OURCgvWX-b0s0IT88O866BzZVxTDCuhh44=w673-h659-no?authuser=0" class="card-img">
 
              	<h1 class="card-heading">Lamp</h1>
              	<p class="card-paragraph"><i class="fas fa-quote-left"></i>
